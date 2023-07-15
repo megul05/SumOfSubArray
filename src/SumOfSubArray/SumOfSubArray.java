@@ -7,7 +7,7 @@ public class SumOfSubArray {
 	 public static int findSum(int[] arr,int size) 
 	 {
 	        int sum = 0;
-	        int t_sum = 0;
+	        int subsum = 0;
 	        if(size <= 1) 
 	        {
 	            return arr[0];
@@ -18,10 +18,10 @@ public class SumOfSubArray {
 	            for(int j=i;j<size;j++)
 	            {
 	                sum += arr[j];
-	                t_sum += sum;
+	                subsum += sum;
 	            }
 	        }
-	        return t_sum;
+	        return subsum;
 	    }
 
 	public static void main(String[] args) {
